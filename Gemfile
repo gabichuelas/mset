@@ -28,9 +28,32 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'omniauth-google-oauth2'
+gem 'json'
+
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
+  gem 'webmock'
+  gem 'vcr'
+  gem 'pry'
+  gem 'travis'
+  gem 'figaro'
+  # gem 'rack-cors'
+
+  # for developer happiness!
+  gem 'table_print'
+  gem 'irbtools'
+  gem 'rails-erd'
+  gem 'rspec-pride'
 end
 
 group :development do
